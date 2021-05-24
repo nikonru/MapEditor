@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<data name="Hi World" tile_size="64">
+
+    <category name="blocks">
+        <tile>
+            <name>dirt with grass left corner</name>
+            <x>0</x>
+            <y>0</y>
+            <id>13</id>
+        </tile>
+        <tile>
+            <name>dirt with grass</name>
+            <x>1</x>
+            <y>0</y>
+            <id>12</id>
+        </tile>
+        <tile>
+            <name>dirt</name>
+            <x>0</x>
+            <y>1</y>
+            <id>11</id>
+        </tile>
+        <tile>
+            <name>stone</name>
+            <x>1</x>
+            <y>1</y>
+            <id>10</id>
+        </tile>
+    </category>
+
+    <category name="logic">
+        <tile>
+            <name>button</name>
+            <x>0</x>
+            <y>2</y>
+            <id>21</id>
+        </tile>
+        <tile>
+            <name>lever</name>
+            <x>1</x>
+            <y>2</y>
+            <id>20</id>
+        </tile>
+    </category>
+
+    <category name="special">
+        <tile>
+            <name>Finish</name>
+            <x>3</x>
+            <y>0</y>
+            <id>199</id>
+        </tile>
+        <tile>
+            <name>Spawn</name>
+            <x>3</x>
+            <y>1</y>
+            <id>200</id>
+        </tile>
+    </category>
+</data>
