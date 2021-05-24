@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<data name="Hi World" tile_size="64">
+<data tile_size="64">
 
     <category name="blocks">
         <tile>
