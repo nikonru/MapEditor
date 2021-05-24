@@ -9,7 +9,21 @@ def Update(clear = True):
         print("nan")
         __main__.cv.delete("all")
 
-    for i in range(4 * MAP.WIDTH * MAP.HEIGHT):
+    #what part of map we will draw on cavs
+    start = 0
+    end = 4 * MAP.WIDTH * MAP.HEIGHT
+
+    #here we check checkbox and get new range(only for one layer) from
+    #layer combobox
+    if __main__.Show_only_layer.get():
+        if __main__.layer.get() != "Layer":
+            layer = LAYER[__main__.layer.get()] * MAP.WIDTH * MAP.HEIGHT
+            start = layer
+            end = layer + MAP.WIDTH * MAP.HEIGHT
+        else:
+            return
+
+    for i in range(start,end):
         if MAP.MAP[i] != 0:
 
             w = i % (MAP.HEIGHT * MAP.WIDTH) #array of layer

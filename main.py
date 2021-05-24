@@ -70,7 +70,13 @@ cb_grid = Checkbutton(toolbar, text = "Display Grid", variable = Display_Grid, o
                       command = mp.Update)
 cb_grid.grid(column=0)
 
+Show_only_layer = IntVar()
+chosen_layer = Checkbutton(toolbar, text = "Show only chosen layer", variable = Show_only_layer, onvalue = 1, offvalue = 0,
+                      command = mp.Update)
+chosen_layer.grid(column=0)
+
 layer = ttk.Combobox(toolbar, values=["Skybox", "Background", "Level", "Foreground"], state="readonly")
+layer.bind('<<ComboboxSelected>>', mp.Update)
 layer.set("Layer")
 layer.grid(column=0)
 
